@@ -16,8 +16,8 @@ genetic and nutritional data come from different sources.
 | --- | --- |
 | 1000 Genomes Project (2,504 individuals) | Genotypes for candidate variants in 10 height-associated genes chosen from the literature, with sex, population and super-population |
 | A population-to-country table I compiled | Linking each 1000 Genomes population to a country or region |
-| Country-level mean height at age 19, by sex and year | Outcome |
-| FAOSTAT food balance data | Protein, fat and energy supply per person, and supply of individual food groups |
+| NCD Risk Factor Collaboration (NCD-RisC): country-level mean height at age 19, by sex and year | Outcome |
+| FAOSTAT food balance sheets | Protein, fat and energy supply per person, and supply of individual food groups |
 
 The data files are not included in this repository.
 
@@ -32,7 +32,8 @@ The data files are not included in this repository.
    separately for males and females.
 4. **Modelling.** Fitted linear regressions of mean height on nutritional variables, on genetic summaries, and
    on both together, overall and by sex. Used PCA on the standardized food-supply variables to deal with the
-   many correlated food items.
+   many correlated food items, and decision trees (described in the report) to check which variables the
+   models selected.
 
 ## What I learned
 
